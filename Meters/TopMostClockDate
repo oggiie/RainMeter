@@ -1,6 +1,6 @@
 ; ----------------------------------------------------------------------#
-; Lines starting ; (semicolons) are commented out. That is, they do not	#
-; affect the code and are here for demonstration purposes only.			#
+; Lines starting ; (semicolons) are commented out. ; That is, they do	#
+; not affect the code and are here for demonstration purposes only.		#
 ; ----------------------------------------------------------------------#
 
 ; ----------------------------------------------------------------------#
@@ -36,20 +36,21 @@ colorText=255,255,255,205
 ; ----------------------------------------------------------------------#
 ; MEASURES return some kind of value									#
 ; ----------------------------------------------------------------------#
+; This measure returns the time in a 24-hour format (i.e. HH:MM).		#
+; For a 12-hour clock, change the Format option above to: %I:%M %p		#
+; Refer to the Rainmeter manual for other format codes.					#
+; ----------------------------------------------------------------------#
 [measureTime]
-; This measure returns the time in a 24-hour format (i.e. HH:MM).
 Measure=Time
 Format=%H:%M
-; For a 12-hour clock, change the Format option above to: %I:%M %p
-; Refer to the Rainmeter manual for other format codes.
 
-[measureDate]
 ; Returns the date as DD.MM.YYYY
+[measureDate]
 Measure=Time
 Format=%d.%m.%Y
 
+; Returns the current weekday, for example,"%A" = Sunday, "%a" = Sun 
 [measureDay]
-; Returns the current day
 Measure=Time
 Format=%a
 
