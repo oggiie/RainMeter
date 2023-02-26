@@ -1,11 +1,11 @@
 ; ----------------------------------------------------------------------#
 ; Lines starting ; (semicolons) are commented out. That is, they do not #
-; affect the code and are here for demonstration purposes only.					#
+; affect the code and are here for demonstration purposes only.			#
 ; ----------------------------------------------------------------------#
 
 ; ----------------------------------------------------------------------#
-; This section contains general settings that can be used to change		  #
-; how Rainmeter behaves. #@# = \Rainmeter\Skins\Alien\@Resources		    #
+; This section contains general settings that can be used to change		#
+; how Rainmeter behaves. #@# = \Rainmeter\Skins\Alien\@Resources		#
 ; ----------------------------------------------------------------------#
 [Rainmeter]
 Update=2000
@@ -14,7 +14,7 @@ Update=2000
 ;BackgroundMargins=0,20,0,20
 
 ; ----------------------------------------------------------------------#
-; Metadata contains basic information of the skin.						          #
+; Metadata contains basic information of the skin.						#
 ; ----------------------------------------------------------------------#
 [Metadata]
 Name=Clock&Day
@@ -25,7 +25,7 @@ Version=1.0.1
 
 ; ----------------------------------------------------------------------#
 ; Variables declared here can be used later on between two # characters	#
-; (e.g. #MyVariable#).													                        #
+; (e.g. #MyVariable#).											        #
 ; ----------------------------------------------------------------------#
 [Variables]
 fontName=Trebuchet MS
@@ -34,7 +34,7 @@ colorBar=235,170,0,255
 colorText=255,255,255,205
 
 ; ----------------------------------------------------------------------#
-; MEASURES return some kind of value									                  #
+; MEASURES return some kind of value							        #
 ; ----------------------------------------------------------------------#
 [measureTime]
 ; This measure returns the time in a 24-hour format (i.e. HH:MM).
@@ -55,7 +55,7 @@ Format=%a
 
 ; ----------------------------------------------------------------------#
 ; STYLES are used to define default options as how an info will be shown#
-; on display! FontEffectColor=R,G,B,Alpha								                #
+; on display! FontEffectColor=R,G,B,Alpha						        #
 ; ----------------------------------------------------------------------#
 ; Meters using styleTitle will be Left-aligned & Upper Case.
 [styleTitle]
@@ -103,10 +103,10 @@ SolidColor=255,255,255,35
 SolidColor=0,0,0,50
 
 ; ----------------------------------------------------------------------#
-; METERS display images, text, bars, etc.								                #
+; METERS display images, text, bars, etc.								#
 ; ----------------------------------------------------------------------#
 ; Using MeterStyle=styleTitle will basically "copy" the contents of the	#
-; [styleTitle] section here during runtime. *01							            #
+; [styleTitle] section here during runtime. *01							#
 ; ----------------------------------------------------------------------#
 ; %1 stands for the value of MeasureName (measureTime in this case). *02#
 ; ----------------------------------------------------------------------#
@@ -136,7 +136,7 @@ Text=- %1,
 ; r stands for relative. In this case, the Y position of [meterDate] is	#
 ; 0 pixels below the Y value of the previous meter (in anotherwords, the#
 ; same as [meterDay]). X position of this meter starts in 23 px to the	#
-; right of the previous meter! *03									                  	#
+; right of the previous meter! *03						              	#
 ; ----------------------------------------------------------------------#
 
 [meterDate]
