@@ -1,0 +1,167 @@
+; ----------------------------------------------------------------------#
+; Lines starting ; (semicolons) are commented out. That is, they do not #
+; affect the code and are here for demonstration purposes only.					#
+; ----------------------------------------------------------------------#
+
+; ----------------------------------------------------------------------#
+; This section contains general settings that can be used to change		  #
+; how Rainmeter behaves. #@# = \Rainmeter\Skins\Alien\@Resources		    #
+; ----------------------------------------------------------------------#
+[Rainmeter]
+Update=2000
+;Background=#@#Background.png
+;BackgroundMode=3
+;BackgroundMargins=0,20,0,20
+
+; ----------------------------------------------------------------------#
+; Metadata contains basic information of the skin.						          #
+; ----------------------------------------------------------------------#
+[Metadata]
+Name=Clock&Day
+Author=poiru, Edited by Oggie
+Information=Displays the current date and time.
+License=Creative Commons BY-NC-SA 3.0
+Version=1.0.1
+
+; ----------------------------------------------------------------------#
+; Variables declared here can be used later on between two # characters	#
+; (e.g. #MyVariable#).													                        #
+; ----------------------------------------------------------------------#
+[Variables]
+fontName=Trebuchet MS
+textSize=7
+colorBar=235,170,0,255
+colorText=255,255,255,205
+
+; ----------------------------------------------------------------------#
+; MEASURES return some kind of value									                  #
+; ----------------------------------------------------------------------#
+[measureTime]
+; This measure returns the time in a 24-hour format (i.e. HH:MM).
+Measure=Time
+Format=%H:%M
+; For a 12-hour clock, change the Format option above to: %I:%M %p
+; Refer to the Rainmeter manual for other format codes.
+
+[measureDate]
+; Returns the date as DD.MM.YYYY
+Measure=Time
+Format=%d.%m.%Y
+
+[measureDay]
+; Returns the current day
+Measure=Time
+Format=%a
+
+; ----------------------------------------------------------------------#
+; STYLES are used to define default options as how an info will be shown#
+; on display! FontEffectColor=R,G,B,Alpha								                #
+; ----------------------------------------------------------------------#
+; Meters using styleTitle will be Left-aligned & Upper Case.
+[styleTitle]
+StringAlign=Left
+StringCase=Upper
+StringStyle=Bold
+StringEffect=Shadow
+FontEffectColor=0,0,50,150
+FontColor=#colorText#
+FontFace=#fontName#
+FontSize=10
+AntiAlias=1
+ClipString=1
+
+; Meters using styleLeftText will be left-aligned.
+[styleLeftText]
+StringAlign=Left
+StringCase=None
+StringStyle=Bold
+StringEffect=Shadow
+FontEffectColor=0,0,40,60
+FontColor=#colorText#
+FontFace=#fontName#
+FontSize=#textSize#
+AntiAlias=1
+ClipString=1
+
+; Meters using styleRightText will be Right-aligned.
+[styleRightText]
+StringAlign=Right
+StringCase=None
+StringStyle=Bold
+StringEffect=Shadow
+FontEffectColor=0,0,40,60
+FontColor=#colorText#
+FontFace=#fontName#
+FontSize=#textSize#
+AntiAlias=1
+ClipString=1
+
+; Thin line for horizon's segmentation.
+[styleSeperator]
+SolidColor=255,255,255,35
+[styleSeperatorFade]
+SolidColor=0,0,0,50
+
+; ----------------------------------------------------------------------#
+; METERS display images, text, bars, etc.								                #
+; ----------------------------------------------------------------------#
+; Using MeterStyle=styleTitle will basically "copy" the contents of the	#
+; [styleTitle] section here during runtime. *01							            #
+; ----------------------------------------------------------------------#
+; %1 stands for the value of MeasureName (measureTime in this case). *02#
+; ----------------------------------------------------------------------#
+[meterTitle]
+Meter=String
+; *01
+MeterStyle=styleTitle
+MeasureName=measureTime
+X=0
+Y=0
+W=42
+H=18
+; *02
+Text=%1
+
+[meterDay]
+Meter=String
+MeterStyle=styleLeftText
+MeasureName=measureDay
+X=43r
+Y=0r
+W=28
+H=14
+Text=- %1, 
+
+; ----------------------------------------------------------------------#
+; r stands for relative. In this case, the Y position of [meterDate] is	#
+; 0 pixels below the Y value of the previous meter (in anotherwords, the#
+; same as [meterDay]). X position of this meter starts in 23 px to the	#
+; right of the previous meter! *03									                  	#
+; ----------------------------------------------------------------------#
+
+[meterDate]
+Meter=String
+MeterStyle=styleLeftText
+MeasureName=measureDate
+; *03
+X=29r
+Y=0r
+W=60
+H=14
+Text=%1
+
+[meterSeperator]
+Meter=Image
+MeterStyle=styleSeperator
+X=0
+Y=15r
+W=133
+H=2
+
+[meterSeperatorFade]
+Meter=Image
+MeterStyle=styleSeperatorFade
+X=2r
+Y=1r
+W=133
+H=2
