@@ -1,5 +1,5 @@
 ; ----------------------------------------------------------------------#
-; Lines starting ; (semicolons) are commented out. That is, they do not #
+; Lines starting ; (semicolons) are commented out. That is, they do not	#
 ; affect the code and are here for demonstration purposes only.			#
 ; ----------------------------------------------------------------------#
 
@@ -25,7 +25,7 @@ Version=1.0.1
 
 ; ----------------------------------------------------------------------#
 ; Variables declared here can be used later on between two # characters	#
-; (e.g. #MyVariable#).											        #
+; (e.g. #MyVariable#).													#
 ; ----------------------------------------------------------------------#
 [Variables]
 fontName=Trebuchet MS
@@ -34,7 +34,7 @@ colorBar=235,170,0,255
 colorText=255,255,255,205
 
 ; ----------------------------------------------------------------------#
-; MEASURES return some kind of value							        #
+; MEASURES return some kind of value									#
 ; ----------------------------------------------------------------------#
 [measureTime]
 ; This measure returns the time in a 24-hour format (i.e. HH:MM).
@@ -55,7 +55,7 @@ Format=%a
 
 ; ----------------------------------------------------------------------#
 ; STYLES are used to define default options as how an info will be shown#
-; on display! FontEffectColor=R,G,B,Alpha						        #
+; on display! FontEffectColor=R,G,B,Alpha								#
 ; ----------------------------------------------------------------------#
 ; Meters using styleTitle will be Left-aligned & Upper Case.
 [styleTitle]
@@ -136,7 +136,7 @@ Text=- %1,
 ; r stands for relative. In this case, the Y position of [meterDate] is	#
 ; 0 pixels below the Y value of the previous meter (in anotherwords, the#
 ; same as [meterDay]). X position of this meter starts in 23 px to the	#
-; right of the previous meter! *03						              	#
+; right of the previous meter! *03										#
 ; ----------------------------------------------------------------------#
 
 [meterDate]
