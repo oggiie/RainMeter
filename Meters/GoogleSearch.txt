@@ -1,0 +1,3 @@
+ - "Bar2ColorsDark480x60.png" used fron @Resources inside in use skin, not as backgroud but as an image
+ - "Trebuchet MS" Font from system
+ - "InputText.dll" Plugin from ...Rainmeter\Plugins folder
