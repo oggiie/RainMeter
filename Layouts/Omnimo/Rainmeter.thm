@@ -1,0 +1,16 @@
+[Rainmeter]
+
+[WP7\Gallery\Intro]
+Active=1
+WindowX=(#ScreenAreaWidth#/2-327)
+WindowY=(#ScreenAreaHeight#/2-148)
+AlphaValue=255
+FadeDuration=250
+ClickThrough=0
+Draggable=1
+HideOnMouseOver=0
+SavePosition=1
+SnapEdges=1
+KeepOnScreen=1
+AutoSelectScreen=0
+AlwaysOnTop=0

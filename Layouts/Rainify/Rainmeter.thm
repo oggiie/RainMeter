@@ -1,0 +1,82 @@
+[Rainmeter]
+
+[Rainify\@Settings]
+Active=1
+WindowX=((#WORKAREAWIDTH# / 2) - 355)
+WindowY=((#WORKAREAHEIGHT# / 2) - 125)
+AlwaysOnTop=-2
+
+[Rainify\Battery]
+AlwaysOnTop=-2
+
+[Rainify\Calendar]
+AlwaysOnTop=-2
+
+[Rainify\Clock]
+AlwaysOnTop=-2
+
+[Rainify\Disks]
+AlwaysOnTop=-2
+
+[Rainify\Facebook]
+AlwaysOnTop=-2
+
+[Rainify\Feeds]
+AlwaysOnTop=-2
+
+[Rainify\Feeds\URL1]
+AlwaysOnTop=-2
+
+[Rainify\Feeds\URL2]
+AlwaysOnTop=-2
+
+[Rainify\Feeds\URL3]
+AlwaysOnTop=-2
+
+[Rainify\Feeds\URL4]
+AlwaysOnTop=-2
+
+[Rainify\Gcal]
+AlwaysOnTop=-2
+
+[Rainify\Gmail]
+AlwaysOnTop=-2
+
+[Rainify\InterfaceLIFT]
+AlwaysOnTop=-2
+
+[Rainify\Media Player]
+AlwaysOnTop=-2
+
+[Rainify\Network]
+AlwaysOnTop=-2
+
+[Rainify\Notes]
+AlwaysOnTop=-2
+
+[Rainify\Recycle Bin]
+Active=1
+WindowX=((#WORKAREAWIDTH# / 2) + 105)
+WindowY=((#WORKAREAHEIGHT# / 2) - 31)
+AlwaysOnTop=-2
+
+[Rainify\Slideshow]
+AlwaysOnTop=-2
+
+[Rainify\System]
+Active=1
+WindowX=((#WORKAREAWIDTH# / 2) + 105)
+WindowY=((#WORKAREAHEIGHT# / 2) - 125)
+AlwaysOnTop=-2
+
+[Rainify\Twitter]
+AlwaysOnTop=-2
+
+[Rainify\Weather]
+AlwaysOnTop=-2
+
+[Rainify\Wireless]
+AlwaysOnTop=-2
+
+[Rainify\WOTD]
+AlwaysOnTop=-2
