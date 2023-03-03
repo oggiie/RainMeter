@@ -1,3 +1,0 @@
-- Background.png at @Resources not in use
-- Measures use only "Time" Meter
-- "Trebuchet MS" Font from system
